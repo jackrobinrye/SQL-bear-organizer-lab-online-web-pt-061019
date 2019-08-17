@@ -21,6 +21,7 @@ def selects_oldest_bear_and_returns_name_and_age
   "SELECT name, age FROM bears WHERE age = (SELECT MAX(age) FROM bears)"
 end
 
+#why does this one work but max doesn't?
 def select_youngest_bear_and_returns_name_and_age
   "SELECT name, age FROM bears WHERE age = (SELECT MIN(age) FROM bears)"
 end
