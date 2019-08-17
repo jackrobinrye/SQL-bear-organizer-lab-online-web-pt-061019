@@ -18,7 +18,7 @@ end
 
 #need help
 def selects_oldest_bear_and_returns_name_and_age
-  "SELECT name, age FROM bears WHERE age = (SELECT MAX(age) FROM bears);"
+  "SELECT name, age FROM bears ORDER BY age DESC LIMIT 1;"
 end
 
 #why does this one work but max doesn't?
