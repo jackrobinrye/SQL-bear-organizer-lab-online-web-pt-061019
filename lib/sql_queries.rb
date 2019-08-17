@@ -1,6 +1,6 @@
 #need help
 def selects_all_female_bears_return_name_and_age
-  "SELECT name, age FROM bears WHERE gender = 'female'"
+  "SELECT name, age FROM bears WHERE gender = 'Female'"
 end
 
 
@@ -25,7 +25,7 @@ end
 
 
 def select_youngest_bear_and_returns_name_and_age
-  "Write your SQL query here"
+  "SELECT name, age FROM bears WHERE age = (SELECT MIN(age) FROM bears)"
 end
 
 def selects_most_prominent_color_and_returns_with_count
